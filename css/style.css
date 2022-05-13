@@ -1,0 +1,644 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Italiana&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+html, body{
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+/*Header do cabeçalho*/
+.container {
+    max-width: 1312px;
+    margin: 0px auto;
+    padding: 0 32px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    border-bottom: 1px solid #ddd9d9;
+}
+
+header .logo {
+    display: block;
+    width: 96px;
+    height: auto;
+    margin-right: 32px;
+}
+
+header.logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header .container {
+    height: 75px;
+    align-items: center;
+}
+
+header .container, header .container div, header .container ul {
+    display: flex;
+}
+
+header .container div {
+    width: 50%;   
+}
+
+header .container div, header nav ul {
+    height: 100%;
+    align-items: center;
+    list-style: none;
+}
+
+
+header div:last-child {
+    justify-content: flex-end;
+}
+
+
+header nav li {
+    margin-right: 32px;
+}
+
+header nav li a {
+    font-weight: bold;
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+}
+
+
+header div button {
+    color: #0060df;
+    border: 2px solid #0060df;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 24px;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: .5s;
+    transition-property: background-color, color;
+}
+
+header div button:hover {
+    color: #fff;
+    background-color: #0060df;
+}
+
+
+/*Começo container section, corpo do texto*/
+
+section .container {
+    padding: 48px 0px 96px 0px;
+    display: flex;
+}
+
+.left-main-content {
+    width: 70%;
+}
+
+.left-main-content menu ol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0px;
+}
+
+.left-main-content menu ol li:last-child a {
+    color: #42435a;
+}
+
+.left-main-content menu ol li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #80808f;
+    margin: 0px 4px 0px 0px;
+}
+
+.left-main-content menu ol li a:hover {
+    color: #0060df;
+}
+
+.left-main-content main header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 72px 0px 56px 0px;
+    border-bottom:  1px solid #20133a;
+    height: auto;
+}
+
+.left-main-content main header a {
+    display: block;
+    width: 48px;
+    height: auto;
+}
+
+.left-main-content main header a img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.left-main-content main header h1 {
+    color: #20133a;
+    font-weight: 700;
+    line-height: 3.5rem;
+    font-size: 48px;
+    padding-bottom: 15px;
+    margin-top: 16px;
+}
+
+.left-main-content main article p {
+    color: #42435a;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.left-main-content main article section{
+    padding: 24px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    color: rgb(66, 67, 90);
+    background-color: rgb(226, 226, 228);
+}
+
+.left-main-content main mark {
+    color: rgb(20, 20, 34);
+    background-color: rgb(220, 220, 223);
+    font-weight: normal;
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.help {
+    list-style: disc;
+    margin: 16px;
+}
+
+.help li {
+    margin-bottom: 8px;
+    color: #42435a;
+}
+
+.left-main-content main footer {
+    color: #42435a;
+    text-align: center;
+    padding: 32px 0px;
+}
+
+.left-main-content main footer h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.left-main-content main footer ul {
+    font-size: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.left-main-content main footer ul li {
+    margin-right: 5px;
+}
+
+.left-main-content main footer ul li a {
+    text-decoration: underline;
+}
+
+.left-main-content main footer ul li a:hover {
+    text-decoration: none;
+}
+
+
+/*Section do footer*/
+#volunteer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+    background: rgb(226, 226, 228) url(../img/volunteer.png) no-repeat left center;
+    background-size: 50% auto;
+}
+
+#volunteer > div {
+    width: 50%;
+    text-align: center;
+    max-width: 400px;
+    margin: 0px 40px;
+}
+
+#volunteer h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    color: black;
+}
+
+#volunteer p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+#volunteer a {
+    display: block;
+    margin-top: 16px;
+    text-decoration: underline;
+    color: #0060df;
+    font-weight: bold;
+}
+
+
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+/*seção do aside*/
+
+aside {
+    width: 30%;
+    padding: 0px 0px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+aside header {
+    border: none;
+    height: auto;
+    align-items: initial;
+    display: block;
+}
+
+
+aside main {
+    display: block;
+    height: 100%;
+}
+
+aside main section ul {
+    list-style: none;
+}
+
+aside header form {
+    margin-bottom: 60px;
+    height: 40px;
+    padding-left: 8px;
+    display: flex;
+    border: 2px solid #9595a2;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+
+aside form button {
+    background-color: none;
+}
+
+aside form input {
+    appearance: none;
+    border: none;
+} 
+
+aside form input::placeholder {
+    font-size: 16px;
+}
+
+aside form input:focus-visible {
+    appearance: none;
+    outline: none;
+}
+
+aside form input, aside form button {
+    display: block;
+    height: 100%;
+}
+
+aside form button {
+    background: none;
+    border: none;
+}
+
+aside form button span {
+    display: flex !important;
+    align-items: center !important;
+}
+
+aside ul { 
+    margin-top: 16px;
+}
+
+aside ul li input[type="checkbox"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9595a2;
+    border-radius: 2px;
+    background-color: #fff;
+    vertical-align: middle;
+    content: "";
+    margin: 0px 15px 0px 0px;
+}
+
+aside ul li {
+    margin-bottom: 15px;
+}
+
+
+aside ul li select, .main-footer li select {
+    background: #fff url(../img/select.svg) no-repeat top 14px right 14px;
+    background-size: 12px 12px;
+    text-align: left;
+    padding: 0px 8px;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #9595a2;
+    color: #0c0c0d;
+    outline: 0;
+    appearance: none;
+    border-radius: 4px;
+}
+
+aside section:last-child {
+    margin-top: 300px;
+    border-radius: 24px;
+    padding: 24px;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    box-shadow: 0 5px 10px -3px rgba(14, 13, 26, 0.096), 0 3px 16px 2px rgba(7, 48, 114, 0.26), 0 8px 12px 1px rgba(34, 0, 51, 0.062);
+}
+
+aside section:last-child form {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    border: none;
+    flex-flow: row wrap;
+    line-height: 1.5rem;
+}
+
+
+aside section:last-child form button {
+    font-size: 24px;
+    padding-right: 10px ;
+}
+
+aside section:last-child form button:hover {
+    transform: scale(1.2);
+    transition: transform .5s linear;
+    cursor: pointer;
+}
+
+.main-footer{
+    background: #000;
+    color: white;
+}
+
+.main-footer .container {
+    padding: 32px 0px;
+}
+
+.main-footer .container nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-footer .container nav:last-child h5 > a:hover {
+    text-decoration: underline;
+}
+
+.main-footer .container nav h5, .main-footer .container nav h6 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.main-footer .container nav h6 {
+    font-weight: normal;
+}
+
+.main-footer .container nav ul li {
+    margin-bottom: 10px;
+}
+
+.main-footer nav:first-child {
+   margin-bottom: 32px;
+   border-bottom: 1px solid #fff;
+   font-size: 16px;
+   padding-bottom: 32px;
+}
+
+section.container-social {
+    width: 15%;
+}
+
+.main-footer ul {
+    list-style: none;
+}
+
+.main-footer .container nav:first-child .container-social ul li ul{ 
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.main-footer .container nav:first-child ul li ul li {
+    margin-right: 10px;
+}
+
+.main-footer .container nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container-map {
+    display: flex;
+}
+
+.inter-box {
+    width: 50%;
+}
+
+section.inter-box  ul {
+    display: flex;
+    margin-top: 24px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-footer .container section:last-child ul li {
+    margin-right: 24px;
+}
+
+.main-footer .container section:last-child ul li a{
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.main-footer .container aside {
+    font-size: 12px;
+    text-align: right;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.site-map img{
+    display: block;
+    width: 15%;
+}
+
+/*RESPONSIVIDADE*/
+
+@media only screen and (max-width: 768px){
+    header .container div {
+            width: auto;
+        }
+
+    header div.container {
+        justify-content: space-between;
+    }
+
+    section .container {
+        flex-wrap: wrap;
+    }
+
+    .left-main-content {
+        width: auto;
+        padding: 0px 32px;
+    }
+
+    .left-main-content menu ol {
+        flex-direction: column;
+    }
+
+    .left-main-content menu ol li {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .left-main-content menu ol li a {
+        font-size: 18px;
+    }
+
+    .left-main-content main header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom:  1px solid #20133a;
+    }
+
+    .left-main-content main header h1 {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    section .container > aside {
+        width: 100%;
+        display: block;
+        padding: 0px 32px;
+    }
+
+    section#volunteer {
+        padding: 40px 0px;
+        justify-content: center;
+        background: rgb(226, 226, 228);
+    }
+
+    aside section:last-child {
+        margin: 30px auto;
+        position: relative;
+    }
+
+}
+
+/*MEDIA QUERY FOOTER*/
+@media only screen and (max-width: 1334px) {
+    .main-footer .container nav {
+        flex-direction: column;
+    }
+
+    .main-footer .container nav section {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+
+    .main-footer nav:first-child > section.container-social {
+        width: 100%;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .main-footer nav section.container-social ul li ul li {
+        margin-bottom: 0px !important;
+    }
+
+    .main-footer .container nav:first-child .container-social ul li ul {
+        justify-content: center;
+    }
+
+    .main-footer .container {
+        padding: 32px;
+    }
+
+    .main-footer .container section:last-child .inter-box {
+        width: 100%;
+    }
+
+    .container-map {
+        display: block;
+        text-align: center;
+    }
+
+    .container-map a {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .main-footer .container section:last-child .inter-box ul{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .main-footer .container aside {
+        text-align: center;
+    }
+
+}
+
+
